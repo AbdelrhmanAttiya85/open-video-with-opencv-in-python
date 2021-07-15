@@ -1,0 +1,12 @@
+import cv2
+
+
+video=cv2.VideoCapture("istockphoto-915826628-640_adpp_is.mp4")
+while video.isOpened():
+  ret,frame=video.read()
+  cv2.imshow("jhg",frame)
+
+  if cv2.waitKey(40)==27:
+    break
+
+cv2.destroyAllWindows()
